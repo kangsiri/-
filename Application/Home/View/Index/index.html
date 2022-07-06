@@ -1,0 +1,183 @@
+
+
+<!--<div id="hot" class="left"></div>-->
+<!--<div id="news" class="right">新闻列表</div>-->
+
+
+
+
+<div class="clear"></div>
+<!--轮播图片-->
+<div class="banner">
+	<div class="wrapper">
+		<div class="left">
+<!--&lt;!&ndash;			<ul>&ndash;&gt;-->
+<!--&lt;!&ndash;				<li><a href="#">前端开发<span>></span></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;				<li><a href="#">视频剪辑<span>></span></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;				<li><a href="#">Javascript<span>></span></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;				<li><a href="#">Python<span>></span></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;				<li><a href="#">.Vue<span>></span></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;				<li><a href="#">Javascript<span>></span></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;				<li><a href="#">Mysql<span>></span></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;				<li><a href="#">Android<span>></span></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;			</ul>&ndash;&gt;-->
+<!--			-->
+			<div id="slide">
+				<volist name="cate" id="v1" offset="0" length="9">
+					<div class="cate">
+					<div class="cate1 "><a href="__CONTROLLER__/find/cid/{$v1.cid}">{$v1.cname}</a></div>
+					<div class="subitem" style="display:none;">
+						<present name="v1.child"><volist name="v1.child" id="v2" offset="0" length="7">
+							<dl><dt><a href="__CONTROLLER__/find/cid/{$v2.cid}">{$v2.cname}</a></dt><dd>
+								<present name="v2.child"><volist name="v2.child" id="v3" offset="0" length="5">
+									|<a href="__CONTROLLER__/find/cid/{$v3.cid}">{$v3.cname}</a>
+								</volist></present></dd>
+							</dl>
+						</volist></present>
+					</div>
+				</div></volist>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="right">
+			<h2>我的课程表</h2>
+			<div class="content">
+				<dl>
+					<dt><span>继续学习 </span>程序语言设计</dt>
+					<dd>正在学习-使用对象</dd>
+				</dl>
+				<dl>
+					<dt><span>继续学习 </span>程序语言设计</dt>
+					<dd>正在学习-使用对象</dd>
+				</dl>
+				<dl>
+					<dt><span>继续学习 </span>程序语言设计</dt>
+					<dd>正在学习-使用对象</dd>
+				</dl>
+				<a href="#">全部课程</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--精品推荐-->
+<div class="goods wrapper">
+	<h4>精品推荐</h4>
+	<ul>
+		<li><a href="#">JQuery</a></li>
+		<li><a href="#">Think PHP5</a></li>
+		<li><a href="#">Android</a></li>
+		<li><a href="#">Java</a></li>
+		<li><a href="#">Python</a></li>
+		<li><a href="#">MySql</a></li>
+	</ul>
+	<a href="#" class="aaa">修改兴趣</a>
+</div>
+
+<!-- 商品-->
+<div class="box wrapper">
+	<div class="title">
+		<h2>精品推荐</h2>
+		<a href="#">查看全部</a>
+	</div>
+
+	<div class="content clearfix">
+		<ul>
+			<li>
+				<a href="goods.html">
+					<img src="__PUBLIC__/image/course011.png" alt="">
+					<h3>THink PHP5.0 播客系统实战项目演练</h3>
+				</a>
+				<a href="#" ><p><span>《99.00￥》</span> - 1234人正在学习</p></a>
+
+			</li>
+			<li>
+				<a href="#">
+					<img src="__PUBLIC__/image/course02.png" alt="">
+					<h3>Android 网络图片加载框架详解</h3>
+					<p><span>《99.00￥》</span> - 1354人正在学习</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="__PUBLIC__/image/course03.png" alt="">
+					<h3>Angular2 劲爆来袭 打造你的今日头条</h3>
+					<p><span>《99.00￥》</span> - 1454人正在学习</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="__PUBLIC__/image/course04.png" alt="">
+					<h3>Android Hybrid App 开发实战</h3>
+					<p><span>《99.00￥》</span> - 1876人正在学习</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="__PUBLIC__/image/course05.png" alt="">
+					<h3>UGUL<br>源码深度解析</h3>
+					<p><span>《99.00￥》</span> - 2145人正在学习</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="__PUBLIC__/image/course06.png" alt="">
+					<h3>Kami2<br>首页界面切换效果</h3>
+					<p><span>《99.00￥》</span> - 1674人正在学习</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="__PUBLIC__/image/course07.png" alt="">
+					<h3>UNITY<br>入门</h3>
+					<p><span>《99.00￥》</span> - 1245人正在学习</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="__PUBLIC__/image/course08.png" alt="">
+					<h3>Cocos<br><br></h3>
+					<p><span>《99.00￥》</span> - 2244人正在学习</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="__PUBLIC__/image/course03.png" alt="">
+					<h3>THink PHP5.0 播客系统实战项目演练</h3>
+					<p><span>《99.00￥》</span> - 2254人正在学习</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="__PUBLIC__/image/course011.png" alt="">
+					<h3>THink PHP5.0 播客系统实战项目演练</h3>
+					<p><span>《99.00￥》</span> - 1634人正在学习</p>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+</div>
+
+<div id="best">
+	<div class="best-img left"></div>
+	<foreach name="best" item="v">
+	<ul class="item left">
+		<li><a href="__CONTROLLER__/goods/id/{$v.gid}" target="_blank"><empty name="v.thumb"><img src="__PUBLIC__/image/preview.jpg"><else/><img src="__PUBLIC__/uploads/thumb/{$v.thumb}"></empty></a></li>
+		<li class="goods"><a href="__CONTROLLER__/goods/id/{$v.gid}" target="_blank">{$v.gname}</a></li>
+		<li class="price">￥{$v.price}</li>
+	</ul>
+	</foreach>
+	<div class="clear"></div>
+</div>
+
+<script>
+	$(".cate").hover(function(){
+		$(this).find(".subitem").show();
+		$(this).find("a").addClass("on");
+	},function(){
+		$(this).find(".subitem").hide();
+		$(this).find("a").removeClass("on");
+	});
+</script>

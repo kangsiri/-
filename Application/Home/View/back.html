@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+分类
+<div id="slide">
+  <volist name="cate" id="v1" offset="0" length="9"><div class="cate">
+    <div class="cate1 left"><a href="__CONTROLLER__/find/cid/{$v1.cid}">{$v1.cname}</a></div>
+    <div class="subitem" style="display:none;">
+      <present name="v1.child"><volist name="v1.child" id="v2" offset="0" length="7">
+        <dl>
+          <dt><a href="__CONTROLLER__/find/cid/{$v2.cid}">{$v2.cname}</a></dt>
+          <dd>
+            <present name="v2.child"><volist name="v2.child" id="v3" offset="0" length="5">
+              |<a href="__CONTROLLER__/find/cid/{$v3.cid}">{$v3.cname}</a>
+            </volist>
+            </present>
+          </dd>
+        </dl>
+      </volist>
+      </present>
+    </div>
+  </div></volist>
+  <div class="clear"></div>
+</div>
+</body>
+</html>

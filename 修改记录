@@ -1,0 +1,1 @@
+INNODB：数据在ibdata1，需要停止mysqld才能覆盖
